@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="data-section m-4 d-lg-flex">
+
+    <div class="container-left  bg-white rounded-5  ms-1 pe-4 ">
+
+      <div class="d-flex m-2 ">
+        <input class="location-text form-control me-2 mt-4 ms-3 w-100 " type="search" placeholder="Search"
+          aria-label="Search">
+        <button class="btn-search btn btn-primary  mt-4 " type="submit">Search</button>
+      </div>
+
+      <div class="current-condition text-center mt-5 fs-3"></div>
+
+      <div class="image-top text-center mt-5 text-start img-fluid ">
+        <img src="#" class="image-condition img-fluid w-50">
+      </div>
+
+      <div class="conditions ms-auto  me-auto mt-5 text-center ">
+
+        <div class="temp ms-3 fs-1">0°C ;</div>
+        <div class="date-time mt-3 fs-3 fw-lighter">Monday,10.00</div>
+
+      </div>
+      <hr class="mt-5 ms-3">
+
+      <div class="wether-condition mt-4 text-lg-center ms-2 p-1">
+        <div class="condition justify-content-md-center justify-content-lg-start d-flex ">
+          <img src="img/cloudy-vector-icon.jpg" width="60px">
+          <h1 class="cloud-condition fs-5 mt-4 ms-3 ">Condition</h1>
+        </div>
+
+        <div class="rain-perc ms-auto d-flex mt-3 justify-content-md-center  justify-content-lg-start">
+          <img src="img/rain-drop-vector-icon.jpg" alt="" width="50px">
+          <h1 class="rain-percentage fs-5  mt-3 ms-4 "> perc - 0%</h1>
+        </div>
+
+        <div class="wind-speed ms-2 mt-5 d-flex justify-content-md-center justify-content-lg-start">
+          <img src="img/th.jpeg" width=50px>
+          <h1 class="wind-speed-text fs-5 mt-2 ms-4 "> speed - 0 kmh</h1>
+        </div>
+      </div>
+
+
+      <div class="location d-flex text-start fs-5 position-relative  top-50 justify-content-center ms-0 mt-5 mb-5 pb-2 mt-lg-0 ms-lg-0  ms-md-5 pb-md-5">
+        <img src="img/location.jpeg" class="mt-auto" alt="" width="40px">
+        <h1 class="location-country mt-3 ms-2"></h1>
+      </div>
+
+    </div>
+
+    <div class="container-right ms-4 pe-4 pb-4 mt-md-4 mt-lg-0  rounded-5 mt-5 ">
+
+      <div class="navbar d-flex">
+
+        <h1 class="fs-2 ms-5 mt-4 text-black">Today</h1>
+        <h1 class="fs-2  me-auto  mt-4 ms-5"></h1>
+
+        <div class="btn-group me-auto ms-5 mt-5  " role="group" aria-label="Vertical radio toggle button group">
+          <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio1" autocomplete="off" checked>
+          <label class="btnC btn btn-outline-dark me-lg-4 me-3 rounded-5 fs-5 " for="vbtn-radio1">°C</label>
+          <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio2" autocomplete="off">
+          <label class="btnF btn btn-outline-dark me-4 rounded-5 fs-5 " for="vbtn-radio2">°F</label>
+          <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio3" autocomplete="off">
+        </div>
+      </div>
+
+      <div class="hourly-condition">
+
+        <div class="row">
+          <div class="col-lg-2 col-md-4 ">
+            <div class="card ms-4 mt-5 rounded-5 w-auto " style="width: 8rem">
+              <div class="time text-center p-2 fw-bold ">00.00</div>
+              <img src="#" class="condition-today-image ms-auto me-auto " alt="..." width="60px">
+              <div class="card-body">
+                <p class="condition-today card-text text-center"></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-4 ">
+            <div class="card ms-4 mt-5 rounded-5 w-auto " style="width: 8rem ">
+              <div class="time text-center p-2 fw-bold ">01.00</div>
+              <img src="#" class="ms-auto condition-today-image me-auto " alt="..." width="60px">
+              <div class="card-body">
+                <p class="condition-today card-text text-center"></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-4">
+            <div class="card ms-4 mt-5 rounded-5 w-auto " style="width: 8rem">
+              <div class="time text-center p-2 fw-bold ">02.00</div>
+              <img src="#" class="ms-auto condition-today-image me-auto " alt="..." width="60px">
+              <div class="card-body">
+                <p class="condition-today card-text text-center"></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-4">
+            <div class="card ms-4 mt-5 rounded-5 w-auto " style="width: 8rem">
+              <div class="time text-center p-2 fw-bold ">03.00</div>
+              <img src="#" class="ms-auto condition-today-image me-auto " alt="..." width="60px">
+              <div class="card-body">
+                <p class="condition-today card-text text-center"></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-4">
+            <div class="card ms-4 mt-5 rounded-5 w-auto " style="width: 8rem">
+              <div class="time text-center p-2 fw-bold ">04.00</div>
+              <img src="#" class="ms-auto condition-today-image me-auto " alt="..." width="60px">
+              <div class="card-body">
+                <p class="condition-today card-text text-center"></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-4">
+            <div class="card ms-4 mt-5 rounded-5 w-auto" style="width: 8rem">
+              <div class="time text-center p-2 fw-bold ">05.00</div>
+              <img src="#" class="ms-auto condition-today-image me-auto " alt="..." width="60px">
+              <div class="card-body">
+                <p class="condition-today card-text text-center"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-2 col-md-4">
+            <div class="card ms-4 mt-5 rounded-5 w-auto " style="width: 8rem">
+              <div class="time text-center p-2 fw-bold ">06.00</div>
+              <img src="#" class="ms-auto condition-today-image me-auto " alt="..." width="60px">
+              <div class="card-body">
+                <p class="condition-today card-text text-center"></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-4">
+            <div class="card ms-4 mt-5 rounded-5 w-auto" style="width: 8rem">
+              <div class="time text-center p-2 fw-bold ">07.00</div>
+              <img src="#" class="ms-auto condition-today-image me-auto " alt="..." width="60px">
+              <div class="card-body">
+                <p class="condition-today card-text text-center"></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-4">
+            <div class="card ms-4 mt-5 rounded-5 w-auto" style="width: 8rem">
+              <div class="time text-center p-2 fw-bold ">08.00</div>
+              <img src="#" class="ms-auto condition-today-image me-auto " alt="..." width="60px">
+              <div class="card-body">
+                <p class="condition-today card-text text-center"></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-4">
+            <div class="card ms-4 mt-5 rounded-5 w-auto " style="width: 8rem">
+              <div class="time text-center p-2 fw-bold ">09.00</div>
+              <img src="#" class="ms-auto condition-today-image me-auto " alt="..." width="60px">
+              <div class="card-body">
+                <p class="condition-today card-text text-center"></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-4">
+            <div class="card ms-4 mt-5 rounded-5 w-auto " style="width: 8rem">
+              <div class="time text-center p-2 fw-bold ">10.00</div>
+              <img src="#" class="ms-auto condition-today-image me-auto " alt="..." width="60px">
+              <div class="card-body">
+                <p class="condition-today card-text text-center"></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-4">
+            <div class="card ms-4 mt-5 rounded-5 w-auto " style="width: 8rem">
+              <div class="time text-center p-2 fw-bold ">11.00</div>
+              <img src="#" class="ms-auto condition-today-image me-auto " alt="..." width="60px">
+              <div class="card-body">
+                <p class="condition-today card-text text-center"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-2 col-md-4">
+            <div class="card ms-4 mt-5 rounded-5 w-auto" style="width: 8rem">
+              <div class="time text-center p-2 fw-bold ">12.00</div>
+              <img src="#" class="ms-auto condition-today-image me-auto " alt="..." width="60px">
+              <div class="card-body">
+                <p class="condition-today card-text text-center"></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-4">
+            <div class="card ms-4 mt-5 rounded-5 w-auto " style="width: 8rem">
+              <div class="time text-center p-2 fw-bold ">13.00</div>
+              <img src="#" class="ms-auto condition-today-image me-auto " alt="..." width="60px">
+              <div class="card-body">
+                <p class="condition-today card-text text-center"></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-4">
+            <div class="card ms-4 mt-5 rounded-5 w-auto" style="width: 8rem">
+              <div class="time text-center p-2 fw-bold ">14.00</div>
+              <img src="#" class="ms-auto condition-today-image me-auto " alt="..." width="60px">
+              <div class="card-body">
+                <p class="condition-today card-text text-center"></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-4">
+            <div class="card ms-4 mt-5 rounded-5 w-auto" style="width: 8rem">
+              <div class="time text-center p-2 fw-bold ">15.00</div>
+              <img src="#" class="ms-auto condition-today-image me-auto " alt="..." width="60px">
+              <div class="card-body">
+                <p class="condition-today card-text text-center"></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-4">
+            <div class="card ms-4 mt-5 rounded-5 w-auto" style="width: 8rem">
+              <div class="time text-center p-2 fw-bold ">16.00</div>
+              <img src="#" class="ms-auto condition-today-image me-auto " alt="..." width="60px">
+              <div class="card-body">
+                <p class="condition-today card-text text-center"></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-4">
+            <div class="card ms-4 mt-5 rounded-5 w-auto" style="width: 8rem">
+              <div class="time text-center p-2 fw-bold ">17.00</div>
+              <img src="#" class="ms-auto condition-today-image me-auto " alt="..." width="60px">
+              <div class="card-body">
+                <p class="condition-today card-text text-center"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-2 col-md-4">
+            <div class="card ms-4 mt-5 rounded-5 w-auto" style="width: 8rem">
+              <div class="time text-center p-2 fw-bold ">18.00</div>
+              <img src="#" class="ms-auto condition-today-image me-auto " alt="..." width="60px">
+              <div class="card-body">
+                <p class="condition-today card-text text-center"></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-4">
+            <div class="card ms-4 mt-5 rounded-5 w-auto " style="width: 8rem">
+              <div class="time text-center p-2 fw-bold ">19.00</div>
+              <img src="#" class="ms-auto condition-today-image me-auto " alt="..." width="60px">
+              <div class="card-body">
+                <p class="condition-today card-text text-center"></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-4">
+            <div class="card ms-4 mt-5 rounded-5 w-auto " style="width: 8rem">
+              <div class="time text-center p-2 fw-bold ">20.00</div>
+              <img src="#" class="ms-auto condition-today-image me-auto " alt="..." width="60px">
+              <div class="card-body">
+                <p class="condition-today card-text text-center"></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-4">
+            <div class="card ms-4 mt-5 rounded-5 w-auto" style="width: 8rem">
+              <div class="time text-center p-2 fw-bold ">21.00</div>
+              <img src="#" class="ms-auto condition-today-image me-auto " alt="..." width="60px">
+              <div class="card-body">
+                <p class="condition-today card-text text-center"></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-4">
+            <div class="card ms-4 mt-5 rounded-5 w-auto" style="width: 8rem">
+              <div class="time text-center p-2 fw-bold ">22.00</div>
+              <img src="#" class="ms-auto me-auto condition-today-image " alt="..." width="60px">
+              <div class="card-body">
+                <p class="condition-today card-text text-center"></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-4">
+            <div class="card ms-4 mt-5 rounded-5 w-auto" style="width: 8rem">
+              <div class="time text-center p-2 fw-bold ">23.00</div>
+              <img src="#" class="ms-auto condition-today-image me-auto " alt="..." width="60px">
+              <div class="card-body">
+                <p class="condition-today card-text text-center"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class="today-highlights mt-auto ms-4">
+          <div class="today-highlights-text fs-1 fw-bold mt-5">Today's Highlights</div>
+        </div>
+
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 mt-3 ">
+              <div class="UV index card ps-2 rounded-4">
+                <p class="text-black-50 fs-4 mt-2">UV Index</p>
+                <p class="uv-value text-center mt-5 fs-1 pb-5">0</p>
+                <p class="uv-status mb-2 fs-5 text-black"></p>
+              </div>
+            </div>
+            <div class="col-md-6 mt-3 ">
+              <div class="air-quality-status card ps-2 rounded-4">
+                <p class="text-black-50 fs-4 mt-2">Air Quality</p>
+                <p class="air-quality-value text-center mt-5 fs-1 pb-5">0</p>
+                <p class="air-status mb-2 fs-5 text-black"></p>
+              </div>
+            </div>
+            <div class="col-md-6 mt-3 ">
+              <div class="visibility card ps-2 rounded-4">
+                <p class="text-black-50 fs-4 mt-2">Visibility (km)</p>
+                <p class="visibility-value text-center mt-5 fs-1 pb-5">0</p>
+                <p class="visibility-status mb-2 fs-5 text-black"></p>
+              </div>
+            </div>
+            <div class="col-md-6 mt-3 ">
+              <div class="humidity card ps-2 rounded-4">
+                <p class="text-black-50 fs-4 mt-2">Humidity</p>
+                <p class="humidity-value text-center mt-5 fs-1 pb-5">0</p>
+                <p class="humidity-status mb-2 fs-5 mt-2 text-black"></p>
+              </div>
+            </div>
+            <div class="col-md-6 mt-3 ">
+              <div class="moonrise-moonset card ps-2 rounded-4">
+                <p class="text-black-50 fs-4 mt-2">Moonrise & Moonset</p>
+                <p class="moonrise-moonset-value text-center mt-5 fs-3 pb-5">0</p>
+                <p class="moonrise-moonsets-status mt-lg-3 mb-md-2 fs-5 text-black"></p>
+              </div>
+            </div>
+            <div class="col-md-6 mt-3">
+              <div class="sunrise-sunset ps-2 card rounded-4 pb-2  ">
+                <p class="text-black-50 fs-5 mt-2">Sunrise & Sunset</p>
+                <p class="sunrise-sunset-value text-center mt-5 fs-3 pb-5">0</p>
+                <p class="sunrise-sunset-status mt-1  fs-5 text-black"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+
+
+
+  </div>
+
+  </div>
+
+  </div>
+
+  <script src="script/app.js"></script>
+</body>
+
+</html>
